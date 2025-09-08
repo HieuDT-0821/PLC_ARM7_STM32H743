@@ -10,7 +10,11 @@ int main(void) {
 
     while (1) {
         // Code điều khiển PLC
+        // Code điều khiển PLC
+        HAL_Delay(500);
         HAL_GPIO_TogglePin(GPIOB, GPIO_PIN_0);  // Nhấp nháy LED kiểm tra
+        HAL_GPIO_TogglePin(GPIOA, GPIO_PIN_0);  // Nhấp nháy LED kiểm tra
+
         HAL_Delay(500);
     }
 }
